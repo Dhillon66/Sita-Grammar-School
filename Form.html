@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Hello World!</title>
+<script language="javascript">
+function result()
+{
+var a,b,c,d,e,f,g,h,i,j;
+a=document.f6.smaths.value;
+b=document.f6.sscience.value;
+c=document.f6.spunjabi.value;
+d=document.f6.ssst.value;
+e=document.f6.shindi.value;
+f=document.f6.senglish.value;
+g=parseInt(a)+parseInt(b)+parseInt(c)+parseInt(d)+parseInt(e)+parseInt(f);
+document.f6.stotal.value=g;
+if(d>0)
+{
+i="600";
+}
+else
+if(d<=0)
+{
+i="500";
+}
+document.f6.sfrom.value=i;
+h=g/i*100;
+document.f6.per.value=h;
+if(h>70)
+{
+j="Pass";
+}
+else
+if(h<=70)
+{
+j="Fail";
+}
+document.f6.sgrade.value=j;
+}
+</script>
+</head>
+<body style="background-image:url('bi.jpg');">
+<h2 style="text-align:center;font-size:36pt;color:white;">Sita Grammar School</h2>
+<pre>
+<form name="f6" style="color:white;font-size:16pt;">
+Name               <input type="text" name="sname" style="font-size:16pt;color:blue;"><br>
+Class              <input type="number" name="sclass"><br>
+Roll No.           <input type="number" name="srollno"><br>
+Maths              <input type="number" name="smaths">
+Science            <input type="number" name="sscience">
+Punjabi            <input type="number" name="spunjabi">
+SST                <input type="number" name="ssst">
+Hindi              <input type="number" name="shindi">
+English            <input type="number" name="senglish"><br>
+Total              <input type="number" name="stotal" style="font-size:14pt;"><br>
+<input type="button" value="result" onClick="result();"><br>
+From               <input type="text" name="sfrom"><br>
+Percentage         <input type="text" name="per"><br>
+Grade              <input type="text" name="sgrade" style="font-size:14pt;color:red;">
+</form>
+</pre>
+</body>
+</html>
